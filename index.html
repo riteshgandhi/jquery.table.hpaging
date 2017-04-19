@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="paging.css" rel="stylesheet" type="text/css" />
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <script src="jquery-3.2.0.min.js"></script>
+    <!--<script src="jquery.mobile.custom.min.js"></script>-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--<script src="jquery.table.hpaging.js"></script>-->
+    <script src="jquery.table.hpaging.min.js"></script>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <input id="pglmt" placeholder="Page Limit" title="Page Limit" value="10" />
+                </td>
+                <td>
+                    <button id="btnApply">Apply</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table style="width:100%" id="table1">
+            <thead>
+                <tr>
+                    <th>
+                        Header 1
+                    </th>
+                    <th>
+                        Header 2
+                    </th>
+                    <th>
+                        Header 3
+                    </th>
+                    <th>
+                        Header 4
+                    </th>
+                    <th>
+                        Header 5
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        row 1 - col 1
+                    </td>
+                    <td>
+                        row 1 - col 2
+                    </td>
+                    <td>
+                        row 1 - col 3
+                    </td>
+                    <td>
+                        row 1 - col 4
+                    </td>
+                    <td>
+                        row 1 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 2 - col 1
+                    </td>
+                    <td>
+                        row 2 - col 2
+                    </td>
+                    <td>
+                        row 2 - col 3
+                    </td>
+                    <td>
+                        row 2 - col 4
+                    </td>
+                    <td>
+                        row 2 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 3 - col 1
+                    </td>
+                    <td>
+                        row 3 - col 2
+                    </td>
+                    <td>
+                        row 3 - col 3
+                    </td>
+                    <td>
+                        row 3 - col 4
+                    </td>
+                    <td>
+                        row 3 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 4 - col 1
+                    </td>
+                    <td>
+                        row 4 - col 2
+                    </td>
+                    <td>
+                        row 4 - col 3
+                    </td>
+                    <td>
+                        row 4 - col 4
+                    </td>
+                    <td>
+                        row 4 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 5 - col 1
+                    </td>
+                    <td>
+                        row 5 - col 2
+                    </td>
+                    <td>
+                        row 5 - col 3
+                    </td>
+                    <td>
+                        row 5 - col 4
+                    </td>
+                    <td>
+                        row 5 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 6 - col 1
+                    </td>
+                    <td>
+                        row 6 - col 2
+                    </td>
+                    <td>
+                        row 6 - col 3
+                    </td>
+                    <td>
+                        row 6 - col 4
+                    </td>
+                    <td>
+                        row 6 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 7 - col 1
+                    </td>
+                    <td>
+                        row 7 - col 2
+                    </td>
+                    <td>
+                        row 7 - col 3
+                    </td>
+                    <td>
+                        row 7 - col 4
+                    </td>
+                    <td>
+                        row 7 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 8 - col 1
+                    </td>
+                    <td>
+                        row 8 - col 2
+                    </td>
+                    <td>
+                        row 8 - col 3
+                    </td>
+                    <td>
+                        row 8 - col 4
+                    </td>
+                    <td>
+                        row 8 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 9 - col 1
+                    </td>
+                    <td>
+                        row 9 - col 2
+                    </td>
+                    <td>
+                        row 9 - col 3
+                    </td>
+                    <td>
+                        row 9 - col 4
+                    </td>
+                    <td>
+                        row 9 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 10 - col 1
+                    </td>
+                    <td>
+                        row 10 - col 2
+                    </td>
+                    <td>
+                        row 10 - col 3
+                    </td>
+                    <td>
+                        row 10 - col 4
+                    </td>
+                    <td>
+                        row 10 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 11 - col 1
+                    </td>
+                    <td>
+                        row 11 - col 2
+                    </td>
+                    <td>
+                        row 11 - col 3
+                    </td>
+                    <td>
+                        row 11 - col 4
+                    </td>
+                    <td>
+                        row 11 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 12 - col 1
+                    </td>
+                    <td>
+                        row 12 - col 2
+                    </td>
+                    <td>
+                        row 12 - col 3
+                    </td>
+                    <td>
+                        row 12 - col 4
+                    </td>
+                    <td>
+                        row 12 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 13 - col 1
+                    </td>
+                    <td>
+                        row 13 - col 2
+                    </td>
+                    <td>
+                        row 13 - col 3
+                    </td>
+                    <td>
+                        row 13 - col 4
+                    </td>
+                    <td>
+                        row 13 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 14 - col 1
+                    </td>
+                    <td>
+                        row 14 - col 2
+                    </td>
+                    <td>
+                        row 14 - col 3
+                    </td>
+                    <td>
+                        row 14 - col 4
+                    </td>
+                    <td>
+                        row 14 - col 5
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        row 15 - col 1
+                    </td>
+                    <td>
+                        row 15 - col 2
+                    </td>
+                    <td>
+                        row 15 - col 3
+                    </td>
+                    <td>
+                        row 15 - col 4
+                    </td>
+                    <td>
+                        row 15 - col 5
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+
+    <script type="text/javascript">
+        $(function () {
+            $("#table1").hpaging({ "limit": 2 });
+        });
+
+        $("#btnApply").click(function () {
+            var lmt = $("#pglmt").val();
+            $("#table1").hpaging("newLimit", lmt);
+        });
+    </script>
+</body>
+</html>
